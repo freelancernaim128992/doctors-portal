@@ -1,0 +1,111 @@
+.login-section {
+  height: 100vh;
+  background: #ecf0f3;
+}
+.input-container {
+  padding: 60px 35px 35px 35px;
+  border-radius: 40px;
+  background: #ecf0f3;
+  box-shadow: 13px 13px 20px #cbced1, -7px -7px 17px #fff;
+  width: 75%;
+  position: relative;
+}
+.input-container h2 {
+  text-align: center;
+  letter-spacing: 0.5px;
+  padding-top: 7px;
+  color: #24cfaa;
+}
+.input-fields {
+  width: 100%;
+  padding: 75px 5px 5px 5px;
+}
+.input-fields input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 20px 10px 20px 5px;
+  width: 100%;
+}
+.input-fields input::placeholder {
+  position: absolute;
+  left: 15px;
+  font-weight: 600;
+  color: #9a9a9a;
+}
+
+.username,
+.password {
+  margin-bottom: 30px;
+  border-radius: 25px;
+  box-shadow: inset 1px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+.signIn-btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background-color: #24cfaa;
+  padding: 15px 0;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+  transform: 0.5s;
+}
+.signIn-btn:hover {
+  background: #2fdbb6;
+}
+.signIn-btn:active {
+  background: #1da88a;
+}
+.input-container p {
+  padding-top: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+.input-container p a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 15px;
+}
+p.or-style:before {
+  content: "";
+  position: absolute;
+  background: #aaa;
+  width: 150px;
+  height: 2px;
+  left: 5%;
+  bottom: 10px;
+}
+p.or-style:after {
+  content: "";
+  position: absolute;
+  background: #aaa;
+  width: 150px;
+  height: 2px;
+  right: 5%;
+  bottom: 10px;
+}
+.google {
+  display: flex;
+  justify-content: center;
+}
+
+.google button {
+  border-radius: 30px;
+  padding: 10px 15px;
+  border: none;
+  box-shadow: 3px 8px 8px #cbced1, 0px -3px 0px #fff;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1d9178;
+}
+.google-img-style {
+  width: 25px;
+  margin-right: 20px;
+}

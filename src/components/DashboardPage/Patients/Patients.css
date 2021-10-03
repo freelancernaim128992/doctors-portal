@@ -1,0 +1,21 @@
+.patient-section {
+  background: #ecf0f3;
+  height: 100vh;
+}
+.table-container {
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 30px;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+}
+.table-container h3 {
+  color: #19d3b2;
+}
+.patientRow th {
+  padding-right: 150px;
+}
+.index-num {
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 20px;
+}

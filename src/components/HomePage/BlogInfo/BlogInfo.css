@@ -1,0 +1,11 @@
+.quote-style {
+    position: absolute;
+    width: 300px;
+    left: 18%;
+}
+.gradientStyle{
+    background-image: linear-gradient(90deg,#19D3B0,#10CFE8);
+    color: white;
+    position: relative;
+    opacity: 0.6;
+}

@@ -1,0 +1,10 @@
+.card-container{
+    box-shadow: 0 0 10px #d2d2d2;
+    border-radius: 5px;
+    padding: 50px;
+    margin-right: 20px;
+    width: 375px;
+}
+.img-style{
+    height: 50px;
+}

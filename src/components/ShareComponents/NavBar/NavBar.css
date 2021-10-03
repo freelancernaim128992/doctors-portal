@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+.logo-style,
+.sidebar-logo-style {
+  font-family: "Pattaya", sans-serif;
+  font-size: 25px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.logo-style {
+  color: #19d3b3 !important;
+}
+.logo-style span {
+  color: #11d0e4;
+}
+.menu-style {
+  color: #1cc7c1 !important;
+  font-size: 16px;
+  font-weight: 700;
+}
+.profileImg {
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.profile {
+  position: absolute;
+  left: -58px;
+  top: 60px;
+  width: 160px;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.7s;
+}
+.profile ul {
+  list-style: none;
+  background-image: linear-gradient(90deg, #19d3b0, #10cfe8);
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.profile li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.active {
+  transform: scaleY(1);
+}
