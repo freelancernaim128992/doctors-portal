@@ -18,7 +18,7 @@ const Contact = () => {
                     </div>
                     <div className="form-floating text-secondary">
                         <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                        <label for="floatingTextarea">Comments</label>
+                        <label htmlFor="floatingTextarea">Comments</label>
                     </div>
                     <div className="d-flex justify-content-center my-5">
                         <button type="submit" className="btn buttonStyle">SUBMIT</button>

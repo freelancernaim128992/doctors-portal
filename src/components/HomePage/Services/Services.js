@@ -7,14 +7,17 @@ import ServiceInfo from '../ServiceInfo/ServiceInfo';
 const Services = () => {
     const serviceInfo = [
         {
+            id: 1,
             name: 'Fluoride Treatment',
             img: fluoride
         },
         {
+            id: 2,
             name: 'Cavity Filling',
             img: cavity
         },
         {
+            id: 3,
             name: 'Teeth Whitening',
             img: teeth
         }
@@ -28,7 +31,7 @@ const Services = () => {
             <div className="d-flex justify-content-center">
                 <div className="row w-75 mt-5">
                     {
-                        serviceInfo.map(service => <ServiceInfo service={service}></ServiceInfo>)
+                        serviceInfo.map(service => <ServiceInfo service={service} key={service.id}></ServiceInfo>)
                     }
                 </div>
             </div>

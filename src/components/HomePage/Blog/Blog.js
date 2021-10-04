@@ -6,6 +6,7 @@ import quote from '../../../images/quote.png'
 const Blog = () => {
     const blogsInfo = [
         {
+            id:1,
             name: 'Rashed Kabir',
             date: '22 Aug 2018',
             title: 'Check at least a doctor in a year of your teeth',
@@ -14,6 +15,7 @@ const Blog = () => {
             background: 'gradient'
         },
         {
+            id:2,
             name: 'Dr. Caudi',
             date: '23 April 2019',
             title: '2 times of brush in a day can keep your health',
@@ -22,6 +24,7 @@ const Blog = () => {
             img: winson
         },
         {
+            id:3,
             name: 'Dr. Jhon Mitchel',
             date: '7 Aug 2019',
             title: 'The tooth cancer is talking a challenge',
@@ -40,7 +43,7 @@ const Blog = () => {
                 <div className="row w-75 mt-5">
                     <img src={quote} alt="" className="quote-style"/>
                     {
-                        blogsInfo.map(info => <BlogInfo info={info}></BlogInfo>)
+                        blogsInfo.map(info => <BlogInfo key={info.id} info={info}></BlogInfo>)
                     }
                 </div>
             </div>

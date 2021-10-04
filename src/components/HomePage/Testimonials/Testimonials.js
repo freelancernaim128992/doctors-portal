@@ -7,18 +7,21 @@ import Testimonial from '../Testimonial/Testimonial';
 const Testimonials = () => {
     const testimonialsInfo = [
         {
+            id: 1,
             description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde dignissimos obcaecati quia alias similique voluptatem, repellat tempora dolor ab sint minus temporibus, eligendi a itaque hic esse necessitatibus, beatae doloremque.',
             img: winson,
             name: 'Winson Herry',
             city: 'California'
         },
         {
+            id: 2,
             description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde dignissimos obcaecati quia alias similique voluptatem, repellat tempora dolor ab sint minus temporibus, eligendi a itaque hic esse necessitatibus, beatae doloremque.',
             img: ema,
             name: 'Ema Gomez',
             city: 'New York'
         },
         {
+            id: 3,
             description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde dignissimos obcaecati quia alias similique voluptatem, repellat tempora dolor ab sint minus temporibus, eligendi a itaque hic esse necessitatibus, beatae doloremque.',
             img: aliza,
             name: 'Aliza Farari',
@@ -34,7 +37,7 @@ const Testimonials = () => {
                         <h1 className="my-5">What's Our Patients <br/>Says</h1>
                     </div>
                     {
-                        testimonialsInfo.map(info => <Testimonial info={info}></Testimonial>)
+                        testimonialsInfo.map(info => <Testimonial key={info.id} info={info}></Testimonial>)
                     }
                 </div>
             </div>

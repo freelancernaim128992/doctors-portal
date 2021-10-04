@@ -18,7 +18,7 @@ const Doctors = () => {
             <div className="d-flex justify-content-center">
                 <div className="row w-75 mt-5">
                     {
-                        doctors.map(info => <Doctor doctor={info}></Doctor>)
+                        doctors.map(info => <Doctor key={info._id} doctor={info}></Doctor>)
                     }
                 </div>
             </div>
