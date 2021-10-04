@@ -46,22 +46,10 @@ const NavBar = () => {
                             <li className="nav-item pe-5">
                                 <a className="nav-link menu-style" href="/">Contact Us</a>
                             </li>
+                            <li className="nav-item pe-5">
+                                <a className="nav-link menu-style" href="/dashboard/appointment">Dashboard</a>
+                            </li>
                         </ul>
-                        {
-                            email || sessionStorage.getItem('email') ?
-                                <div className="position-relative">
-                                    <img onClick={handleImg} className="profileImg" src={profilePhoto} alt="" />
-                                    <div className="profile" id="profile">
-                                        <ul>
-                                            <li>
-                                                <a href="/dashboard/appointment">Your Profile</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                :
-                                <Link to="/login"><button className="btn buttonStyle">LogIn</button></Link>
-                        }
                     </div>
                 </div>
             </nav>
