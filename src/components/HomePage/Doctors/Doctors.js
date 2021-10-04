@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Doctor from '../Doctor/Doctor';
-import { useState } from 'react/cjs/react.development';
 
 const Doctors = () => {
-    const [doctors, setDoctors] = useState([]);
+    const [doctors, setDoctors] = useState([])
     useEffect(() => {
-        const url = 'http://localhost:4000/doctors';
+        const url = 'http://localhost:4000/doctors'
         fetch(url)
         .then(res => res.json())
         .then(data => setDoctors(data))
