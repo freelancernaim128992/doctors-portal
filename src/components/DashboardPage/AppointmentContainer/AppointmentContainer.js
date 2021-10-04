@@ -7,6 +7,7 @@ const AppointmentContainer = () => {
     const [selectedDate, setSelectedDate] = useState(new Date().toDateString());
     const [appointments, setAppointments] = useState([]);
     const [spinner, setSpinner] = useState(false);
+    const email = sessionStorage.getItem('email');
     const handleDataChange = date => {
         const formateDate = date.toDateString();
         setSelectedDate(formateDate)
@@ -15,7 +16,7 @@ const AppointmentContainer = () => {
         fetch('http://localhost:4000/appointmentsByDate',{
             method: 'POST',
             headers: { 'content-type': 'application/json' },
-            body: JSON.stringify({date : selectedDate})
+            body: JSON.stringify({date : selectedDate, email})
         })
         .then(res => res.json())
         .then(appointment => {

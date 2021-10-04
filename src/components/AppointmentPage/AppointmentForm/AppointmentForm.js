@@ -15,6 +15,7 @@ const customStyles = {
 Modal.setAppElement('#root')
 
 const AppointmentForm = ({ title, openModal, closeModal, date }) => {
+    const email = sessionStorage.getItem('email')
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
         data.title = title;
@@ -56,7 +57,7 @@ const AppointmentForm = ({ title, openModal, closeModal, date }) => {
                         {errors.phone && <span className="text-danger">This field is required</span>}
                     </div>
                     <div className="form-group mb-3">
-                        <input type="text" {...register("email", { required: true })} name="email" placeholder="Email" className="form-control" />
+                        <input type="text" {...register("email", { required: true })} name="email" placeholder="Email" className="form-control" value={email} />
                         {errors.email && <span className="text-danger">This field is required</span>}
                     </div>
                     <div className="form-group row">

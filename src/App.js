@@ -6,6 +6,7 @@ import './App.css';
 import Appointment from './components/AppointmentPage/Appointment/Appointment';
 import AddDoctor from "./components/DashboardPage/AddDoctor/AddDoctor";
 import AppointmentContainer from "./components/DashboardPage/AppointmentContainer/AppointmentContainer";
+import Dashboard from "./components/DashboardPage/Dashboard/Dashboard";
 import Patients from "./components/DashboardPage/Patients/Patients";
 import Home from './components/HomePage/Home/Home';
 import Login from "./components/LoginPage/Login/Login";
@@ -28,17 +29,20 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/dashboard/appointment">
+          <PrivateRoute path="/dashboard/appointment">
             <AppointmentContainer />
-          </Route>
-          <Route path="/dashboard/patients">
+          </PrivateRoute>
+          <PrivateRoute path="/dashboard/patients">
             <Patients />
-          </Route>
+          </PrivateRoute>
           <Route path="/dashboard/addDoctor">
             <AddDoctor />
           </Route>
           <PrivateRoute path="/appointment">
             <Appointment />
+          </PrivateRoute>
+          <PrivateRoute path="/dashboard">
+            <Dashboard />
           </PrivateRoute>
           <Route path="*">
             <NoMatch />

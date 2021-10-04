@@ -1,23 +1,8 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
 import { UserContext } from '../../../App';
-import image from '../../../images/cavity.png'
 import './NavBar.css'
 
 const NavBar = () => {
-    const [user, setUser] = useContext(UserContext);
-    const { email, photo } = user;
-    const handleImg = () => {
-        const showDiv = document.getElementById('profile')
-        showDiv.classList.toggle('active');
-    }
-    let profilePhoto;
-    if (photo === undefined) {
-        profilePhoto = sessionStorage.getItem('photo')
-    } else if (photo !== undefined) {
-        profilePhoto = photo;
-    }
-
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light">
@@ -47,7 +32,7 @@ const NavBar = () => {
                                 <a className="nav-link menu-style" href="/">Contact Us</a>
                             </li>
                             <li className="nav-item pe-5">
-                                <a className="nav-link menu-style" href="/dashboard/appointment">Dashboard</a>
+                                <a className="nav-link menu-style" href="/dashboard">Dashboard</a>
                             </li>
                         </ul>
                     </div>
