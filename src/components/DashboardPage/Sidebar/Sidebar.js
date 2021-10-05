@@ -5,7 +5,7 @@ const Sidebar = () => {
     const email = sessionStorage.getItem('email');
     const [isDoctor, setIsDoctor] = useState(false);
     useEffect(() => {
-        const url = 'http://localhost:4000/isDoctor'
+        const url = 'https://whispering-garden-78687.herokuapp.com/isDoctor'
         fetch(url, {
             method: 'POST',
             headers: { 'content-type': 'application/json' },

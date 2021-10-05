@@ -13,7 +13,7 @@ const AppointmentContainer = () => {
         setSelectedDate(formateDate)
     }
     useEffect(() => {
-        fetch('http://localhost:4000/appointmentsByDate',{
+        fetch('https://whispering-garden-78687.herokuapp.com/appointmentsByDate',{
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({date : selectedDate, email})

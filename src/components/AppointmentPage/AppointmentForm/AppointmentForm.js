@@ -21,7 +21,7 @@ const AppointmentForm = ({ title, openModal, closeModal, date }) => {
         data.title = title;
         data.date = date.toDateString();
         data.created = new Date().toDateString();
-        const url = "http://localhost:4000/addAppointment";
+        const url = "https://whispering-garden-78687.herokuapp.com/addAppointment";
         fetch(url, {
             method: 'POST',
             headers: { 'content-type': 'application/json' },

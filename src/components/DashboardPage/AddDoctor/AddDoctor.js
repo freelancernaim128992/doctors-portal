@@ -22,7 +22,7 @@ const AddDoctor = () => {
         formData.append('email', info.email);
         formData.append('phone', info.phone);
 
-        fetch('http://localhost:4000/AddADoctor', {
+        fetch('https://whispering-garden-78687.herokuapp.com/AddADoctor', {
             method: 'POST',
             body: formData
         })

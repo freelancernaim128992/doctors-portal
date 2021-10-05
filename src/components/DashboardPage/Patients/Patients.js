@@ -6,7 +6,7 @@ import './Patients.css';
 const Patients = () => {
     const [patients, setPatients] = useState([]);
     useEffect(() => {
-        const url = 'http://localhost:4000/appointments';
+        const url = 'https://whispering-garden-78687.herokuapp.com/appointments';
         fetch(url)
         .then(res => res.json())
         .then(data => {
